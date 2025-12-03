@@ -22,7 +22,9 @@ function App() {
     setCopied(false);
 
     try {
-      const response = await fetch('http://localhost:8080/shorten', {
+      const apiUrl = import.meta.env.VITE_API_URL || 'http://localhost:8080';
+
+      const response = await fetch(`${apiUrl}/shorten`, {
         method: 'POST',
         headers: {
           'Content-Type': 'application/json',
