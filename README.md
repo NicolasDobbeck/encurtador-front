@@ -49,3 +49,27 @@ graph LR
     C -->|Regras de Negócio| D[Repository]
     D -->|SQL| E[(Database)]
 ```
+### Rodando o Backend
+```bash
+# Clone o repositório
+git clone https://github.com/NicolasDobbeck/encurtador-back.git
+cd url-shortener
+
+# Execute o projeto (O perfil 'dev' usa banco H2 em memória)
+mvn spring-boot:run
+```
+
+### Rodando o FrontEnd
+```bash
+# Clone o repositório
+git clone https://github.com/NicolasDobbeck/encurtador-front.git
+cd encurtador-front
+
+# Instale as dependências
+npm install
+
+# Rode o servidor de desenvolvimento
+npm run dev
+```
+## 📝 Autor
+Desenvolvido por Nicolas Dobbeck como projeto prático de Arquitetura de Software.
